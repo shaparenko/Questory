@@ -1,0 +1,1234 @@
+/*======  CSS reset  ======*/
+html, body {
+  height: 100%;
+  width: 100%;
+  background-color: #2b2b2b;
+  
+}
+
+
+@font-face {
+    font-family: HelveticaLT; /* Имя шрифта */
+    src: url(../fonts/helv1.otf); /* Путь к файлу со шрифтом */
+}
+
+
+@font-face {
+    font-family: HelveticaBook; /* Имя шрифта */
+    src: url(../fonts/helv3.ttf); /* Путь к файлу со шрифтом */    
+}
+
+@font-face {
+    font-family: Pragmatica; /* Имя шрифта */
+    src: url(../fonts/pragm1.otf); /* Путь к файлу со шрифтом */
+}
+
+@font-face {
+    font-family: HelveticaNeueCyr; /* Имя шрифта */
+    src: url(../fonts/helv4.otf); /* Путь к файлу со шрифтом */
+}
+
+
+
+
+
+
+/*====== END  CSS reset ======*/
+
+/*===== MAIN WRAPPER ===== */
+
+.wrapper{
+    width: 100%;
+    height: 100%;
+    position: relative;
+}
+
+#company{
+  font-family: "HelveticaNeueCyr";
+  font-size: 12pt;
+}
+
+.navbar-nav li a {
+  font-family: "HelveticaNeueCyr";
+  font-size: 12pt;
+}
+
+#home {
+  position: relative;
+  background-image: url(../img/fon2.png);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center center;
+  min-height: 100%;
+  height: 100%;
+  min-height:630px;
+}
+
+#rules {
+  background-color: #fff;
+  position: relative;
+  min-height: 100%;
+  height:750px;
+  border-bottom: 2px dashed #DDDDDD;
+}
+
+#rooms {
+  position: relative;
+  background:#f5f5f5;
+  min-height: 100%;
+  padding-bottom: 30px;
+  /* height:750px; */
+  border-bottom: 2px dashed #DDDDDD;
+}
+
+#cost {
+  background-image: url(../img/bg_md.png);
+  background-repeat: no-repeat;
+  background-size: cover;
+  position: relative;
+  min-height: 100%;
+  //height:900px;
+  border-bottom: 2px dashed #DDDDDD;
+ // display: none;
+}
+
+#zakaz{
+  position: relative;
+  background-image: url(../img/bg_md.png);
+  background-repeat: no-repeat;
+  background-size: cover;
+  min-height: 600px;
+  border-bottom: 2px dashed #DDDDDD;
+  padding-bottom: 30px;
+}
+
+#contacts {
+  position: relative;
+  background-image: url(../img/bg_md.png);
+  background-repeat: no-repeat;
+  background-size: cover;
+  min-height: 100%;
+  height:1050px;
+  //display: none;
+}
+
+footer {
+  position: relative;
+  background-color: #2b2b2b;
+  height:100px;
+}
+
+/*=====END MAIN WRAPPER ===== */
+
+/*===== HOME content ===== */
+
+.box-home{
+  padding-top: 7%;
+} 
+
+
+.logotype{
+  margin:0 auto;
+  max-width: 800px;
+}
+.clear{
+  clear: both;
+}
+
+
+button{
+  font-family: 'Lobster', cursive;
+}
+
+#home a {
+    background-color: #ff7c0e;
+    bottom: 30%;
+    display: block;
+    font-family: "Lobster",cursive;
+    left: 50%;
+    margin-left: -55px;
+    max-width: 110px;
+    position: absolute;
+}
+
+/* ===== END HOME content ===== */
+
+/* ===== RULES content ====== */
+.ruletitle
+{
+   font-family: 'HelveticaBook';
+   font-size: 42pt;
+   color: #5d5c5d;
+   margin-bottom: -25px;
+
+}
+#rules span{
+  display: block;
+  font-family: 'Pragmatica';
+  margin-top: 10px; 
+  text-align: center;
+  font-size: 30pt;
+  color: #5d5c5d;
+}
+
+#group{
+ padding-top: 20%;
+}
+
+
+#time{
+ padding-top: 20%; 
+}
+
+#lamp{
+  padding-top: 50px;
+  
+}
+
+#lamp h2{
+  font-family: 'Pragmatica';
+  color:#6a6868;
+}
+
+img{
+  margin: 0 auto;
+}
+
+
+
+/* ===== END RULES content ====== */
+
+
+
+.bt-buy{
+        background-color: #ff7300;
+        font-family: "Pragmatica";
+        float: left;
+        margin-left: 48px;
+      }
+
+
+/* ===== SERVICES content ====== */
+#rooms h2{
+  font-family: 'Pragmatica';
+  margin-top:70px;
+  color:#6a6868;
+}
+
+
+.box-rooms{
+  width: 100%;
+  min-height: 450px;
+  margin-top: 20px;
+  background-image: url(../img/room_md.png);
+  background-size: cover;
+  background-position: center center;
+  position: relative; 
+  border: 10px solid #DDDDDD;
+  border-radius: 5px;
+ -webkit-box-shadow: 2px 0px 29px 3px rgba(0,0,0,0.75);
+ -moz-box-shadow: 2px 0px 29px 3px rgba(0,0,0,0.75);
+ box-shadow: 2px 0px 29px 3px rgba(0,0,0,0.75);
+}
+
+#cost h2{
+  margin-top:70px;
+  color: white;
+  font-family: 'Pragmatica';
+}
+
+.buy{
+  width: 100%;
+  background-color: white;
+  padding: 10px;
+  position: absolute;
+  bottom: 0;
+}
+.btn-buy{
+  float:right;
+  font-family: 'HelveticaNeueCyr';
+  font-size: 12pt;
+  border-radius: 5px;
+  
+}
+
+
+.norequired {
+    padding-left: 33px;
+}
+
+
+#note{
+  font-family: 'HelveticaNeueCyr';
+  font-weight: lighter;
+  color: #6a6868;
+  text-align: left;
+ /* float: left;*/
+  font-size: 2em;
+}
+
+.buy button{
+  font-family: 'HelveticaNeueCyr';
+  font-size: 12pt;
+  float: right;
+  margin: 12px;
+}
+
+.buy .btn{
+  border-radius: 0;
+}
+
+
+/* ===== END SERVICES content ====== */
+
+.price{
+  margin-top: 65px;
+}
+
+.week{
+  margin: 0 auto;
+  max-width: 1150px;
+}
+#firstWeek { display: block;} 
+#secondWeek { display: none;} 
+#thirdWeek { display: none;}
+
+.day{
+    background-color: white;
+    float: left;
+    height: 545px;
+    margin-left: 12px;
+    margin-top: 20px;
+    width: 150px;
+}
+
+.head-day{
+  height: 150px;
+  width: 100%;
+  
+}
+
+.green{
+  background-color: #34b732;
+}
+
+.gray{
+  background-color:#7d7d7d;
+}
+
+.red{
+  background-color:#e72f43;
+}
+
+.day span{
+  font-family: "HelveticaNeueCyr";
+  height: 25px;
+  display: block;
+  background-color: #7d7d7d;
+  color: white;
+  margin: 10px;
+  text-align: center;
+  padding-top: 3px;
+}
+
+.day .h-time{
+  background-color: #45b55a;
+}
+
+.day .l-time{
+  background-color: #38b1c1;
+}
+
+.nameday{
+  font-family:"Pragmatica";
+  color: white;
+  text-align:left;
+  font-size: 12pt;
+  padding: 10px 0 0 10px;
+}
+
+.namedata{
+  font-family:"Pragmatica";
+  color: white;
+  text-align:left;
+  font-size: 17pt;
+  padding-left: 10px;
+  margin-top: -15px;
+}
+
+.sale{
+   font-family: 'Pragmatica';
+   font-size: 37pt;
+   color: white;
+   padding-left: 15px;
+   margin-top: -20px;
+}
+.dayimg{
+    text-align: center;
+    height:  132px;
+    background-size: cover;
+    background-position: center bottom;
+    background-repeat: no-repeat; 
+    
+}
+.daygreen{
+    background-image: url(../img/e4_day_green.png);
+}
+
+.dayblue{
+    background-image: url(../img/e4_day_blue.png);
+}
+
+
+.weekdays{
+    font-family: "Pragmatica";
+    color: white;
+    text-align: left;
+    font-size: 22pt;
+    padding: 10px 0 0 10px;
+}
+#thisWeek{
+    font-family: "HelveticaNeueCyr";
+    font-size: 18pt;
+    text-align: center;
+}
+
+.holiday{
+  font-family:"Pragmatica";
+  color: white;
+  text-align:right;
+  font-size: 12pt;
+  padding-right: 10px;
+  margin-top: -12px;
+}
+
+#big-line{
+  display: block;
+  margin: 0 auto;
+  //padding-bottom: 10px;
+  width: 100%
+}
+
+#sel-day{
+ margin-top: 50px;
+ border-right: 2px dashed #DDDDDD; 
+}
+
+.clock{
+  display: block;
+  margin: 0 auto;
+  padding-top: 50px;
+}
+
+
+#sel-day p{
+  font-size:35px; 
+  color: white;
+  font-family: 'Pragmatica';
+}
+
+#prc{
+  font-family: "HelveticaNeueCyr";
+  font-size: 35px;
+}
+/*
+#prc strong{
+  font-family: "HelveticaBook";
+  color: #56ae55;
+  font-size: 35px;
+}
+*/
+.padding-form{
+  margin-top: 75px;
+} 
+
+        .myinput{
+          background-color: #b4b4b4;
+          max-width: 260px;
+          height: 45px;
+          margin-bottom: 20px;
+          font-size: 16px;
+          font-family: 'Pragmatica';
+        }
+
+        td{
+          vertical-align: top;
+          padding-bottom: 20px;
+          padding-left: 20px;
+
+        }
+label{
+  display: inline-block;
+  float: left;
+  padding-right:15px; 
+}
+
+textarea{
+  margin-bottom: 20px;
+  padding-bottom: 20px;
+  padding-left: 20px;
+}
+
+label{
+  color: #ff7300;
+  font-size: 25px;
+}
+
+#comment{
+  height: 110px;
+}  
+
+#adrs{
+  margin-top: 12px;
+  display: block;
+  font-family: "Pragmatica";
+  font-size: 20px;
+  color: white;
+}
+
+
+form{
+  display: inline-block;
+  margin-right: 20px;
+}
+
+.bt_buy{
+  margin-left: 50px;
+  margin-top: 65px;
+  background-color: #ff7300;
+  font-family: "Pragmatica";
+  float: left;
+}
+
+/* ===== CONTACTS content ====== */
+.line{
+  display: block;
+  margin: 0 auto;
+  padding-bottom: 10px;
+}
+
+.cnt{
+  margin-top:70px; 
+  color: white;
+  font-family: 'Pragmatica';
+}
+
+.map{
+  max-height:650px;
+  
+}
+
+.build{
+  margin-left: 0px;
+  width: 50%;
+}
+
+h3{
+  padding-left: 15px;
+  text-align: left;
+  color:#ff7300;
+  font-family: 'HelveticaNeueCyr';
+  font-weight: lighter;
+  font-size: 25pt;
+}
+
+.text-map{
+  display: block;
+  color:white;
+  font-family: "HelveticaNeueCyr";
+  font-size: 14pt;
+  font-weight: lighter;
+  margin-left: 10px;
+  margin-top: 25px;
+  //max-width: 350px;
+  text-align: justify;
+}
+
+.map img{
+  display: block;
+  height: auto;
+  max-width: 100%;
+
+}
+
+
+#ipad-text{
+  display: none;
+}
+
+
+/* ===== END CONTACTS content ====== */
+
+address {
+  font-family: "HelveticaNeueCyr";
+  color:#7d7a78;
+  margin-top: 45px;
+  float: left;
+}
+
+/*======= Media queries =======*/
+
+@media screen and (max-width: 767px) { 
+
+      #home {
+        background-image: url(../img/bg_mob1.png);
+      } 
+
+      #group{
+        display: none;
+      }
+    .clock{
+      display: block;
+      margin: 0 auto;
+      padding-top: 0px;
+    }
+      #time{
+        display: none; 
+      }
+      
+      #sel-day{
+          border-right: none;
+      }
+
+      .logotype{
+        margin:0 auto;
+        max-width: 300px;
+      }
+      label{
+        display: none;
+      }
+      #rules {
+        background-color: #fff;
+        position: relative;
+        min-height: 100%;
+        height:600px;
+      }
+
+      #lamp {
+        padding-top: 20%;
+      }
+
+      .underChange span {
+          display: none;
+      } 
+      .dayimg {
+        text-align: center;
+        height: 48px;
+        background-size: cover;
+        background-position: center bottom;
+        background-repeat: no-repeat;
+    }
+    .weekdays {
+        font-family: "Pragmatica";
+        color: white;
+        text-align: left;
+        font-size: 8pt;
+        padding: 0;
+        }
+        #thisWeek {
+            font-family: "HelveticaNeueCyr";
+            font-size: 9pt;
+            text-align: center;
+               // margin-top: -5px;
+        }
+    .norequired {
+        padding-left: 0px;
+    }
+      .myinput{
+        margin: 0 auto;
+        width: 100%;
+      }
+
+      .bt-buy{
+        margin-left: 0;
+        display: block;
+        margin: 0 auto;
+        float: none;
+      }
+
+
+      h3{
+        padding-left: 0;
+        text-align: center;
+      }
+
+      .dns-p1{
+        text-align: center;
+      }
+
+      .dns-p2{
+        text-align: center;
+      }
+
+      .dns-p3{
+        text-align: center;
+      }
+
+      .box-rooms{
+        width: 100%;
+        min-height: 350px;
+        margin-top: 35%;
+        background-image: url(../img/room_md.png);
+        background-size: cover;
+        background-position: center center;
+        position: relative; 
+      }
+
+      #rooms {
+        position: relative;
+        background:#f5f5f5;
+        min-height: 100%;
+        padding-bottom: 30px;
+        
+      }
+
+      .srv-box{
+        padding-bottom: 20px;
+        padding-top: 10%;
+      }
+
+      .box-rooms{
+          text-align: center;
+        min-height: 350px;
+        margin-top: 8%;
+        background-image: url(../img/room_md.png);
+        background-size: cover;
+        background-position: center center;
+        position: relative;
+        
+      }
+
+      #big-line{
+        display:none;
+      }
+
+      .price{
+        display: none;
+      }
+
+      .day {
+          background-color: white;
+          float: left;
+          height: 145px;
+          margin-left: 10px;
+          margin-top: 20px;
+          width: 135px;
+      }
+
+      #cost {
+        background-image: url(../img/bg_md.png);
+        background-repeat: no-repeat;
+        background-size: cover;
+        position: relative;
+        min-height: 100%;
+        //height: 945px;
+        border-bottom: 2px dashed #DDDDDD;
+      }
+
+      .day span {
+        display: none;
+      }
+      
+      
+      .btn-buy{
+        float: none;
+        display: block;
+        margin: 0 auto; 
+      }
+      
+      .buy button{
+        float: none;
+        margin: 0 auto;
+}
+
+      h3{
+        text-align: center;
+      }
+
+      .sel-day{
+        border-right: none; 
+      }
+
+      .padding-form{
+        margin-top: 30px;
+      }
+
+
+      .building{
+        padding: 15px;
+      }
+      
+      #contacts {
+        position: relative;
+        background-image: url(../img/bg_md.png);
+        background-repeat: no-repeat;
+        background-size: cover;
+        min-height: 100%;
+        height: 900px;
+      }
+
+      .map{
+        height: auto;
+        width: 100%
+      }
+
+      #note {
+          text-align: center;
+          font-size: 1.5em;
+      }
+
+      .text-map {
+          display: block;
+          color: white;
+          font-family: "HelveticaNeueCyr";
+          font-size: 13pt;
+          font-weight: lighter;
+          margin-left: 10px;
+          margin-top: 25px;
+          //width: 300px;
+      }
+
+
+
+}
+ 
+@media screen and (max-width: 767px) and (orientation:landscape){
+      
+
+      #home{    
+          background-image: url(../img/bg_xs.png);
+      } 
+
+      #lamp {
+        padding-top: 60px;
+      }
+
+      #rules {
+      background-color: #fff;
+      position: relative;
+      min-height: 100%;
+      height: 650px;
+      }
+
+      .srv-box {
+      padding-top: 0;
+      }
+
+      #contacts {
+          position: relative;
+          background-image: url(../img/bg_md.png);
+          background-repeat: no-repeat;
+          background-size: cover;
+          min-height: 100%;
+          height: 1440px;
+      }
+      label{
+        display: none;
+      }
+      .text-map{
+        text-align: left;
+        margin-left: 10px;
+
+      }
+
+       .dns-p1 {
+        text-align: center;
+        }
+
+        #sel-day{
+          border-right: none;
+      }
+        
+      .myinput{
+        margin: 0 auto;
+        width: 100%;
+      }
+
+      .bt-buy{
+        margin-left: 0;
+        display: block;
+        margin: 0 auto;
+        float: none;
+      }
+      
+      .buy button{
+        float: none;
+        margin: 0 auto;
+       }
+
+      h3{
+        padding-left: 15px;
+        text-align: center;
+      }
+
+      .dns-p1{
+        text-align: center;
+      }
+
+      .dns-p2{
+        text-align: center;
+      }
+
+      .dns-p3{
+        text-align: center;
+      }
+
+      .map img{
+        display: block;
+        height: auto;
+        max-width: 100%;
+      }
+
+      .buy p{
+        color:#838B83;
+        text-align: center;
+        font-size: 2em;
+      }
+
+      .map img{
+        display: block;
+        height: auto;
+        max-width: 100%;
+      }
+
+
+
+}
+ @media screen and (min-width: 1370px) {
+
+      #group{
+        padding-top: 25%;
+      }
+
+      .logotype{
+        margin:0 auto;
+        max-width: 1000px;
+      }
+
+      #time{
+        padding-top: 25%; 
+      }
+
+      #lamp{
+        padding-top: 50px;
+      }
+
+      #lamp .line{
+        margin-bottom: 70px;
+      }
+
+      #rooms h2{
+        margin-top: 70px;
+      }
+
+      .box-rooms{
+        max-width: 1150px;
+        margin-top: 10%;
+      }
+
+      .map{
+        float: right;
+        margin-right: 30px;
+        display: block;
+        height: auto;
+        max-width: 78%;
+      }
+  
+}
+
+/* === iPad portrait + landscape === */
+@media all and (device-width: 768px) and (device-height: 1024px) and (orientation:portrait) {
+
+    #rooms h2 {
+      font-family: 'Pragmatica';
+      margin-top: 100px;
+      color: #6a6868;
+    }
+
+    .logotype{
+      float:none;
+      margin:0 auto;
+      max-width: 500px;
+    }
+
+   label{
+        display: none;
+      }
+
+    .myinput{
+        margin: 0 auto;
+        width: 100%;
+    }
+
+    .bt-buy{
+        margin-left: 0;
+        display: block;
+        margin: 0 auto;
+        float: none;
+      }
+      
+      #sel-day{
+          border-right: none;
+      }
+
+      .buy button{
+        float: none;
+        margin: 0 auto;
+        }
+
+      h3{
+        padding-left: 15px;
+        text-align: center;
+      }
+
+      .dns-p1{
+        text-align: center;
+      }
+
+      .dns-p2{
+        text-align: center;
+      }
+
+      .dns-p3{
+        text-align: center;
+      }
+
+    #cost .line{
+      display: none;
+    }
+
+    #group{
+      padding-top: 50%;
+    }
+
+    #time{
+      padding-top: 50%; 
+    }
+
+    #lamp{
+      padding-top: 80px;
+    }
+    
+    #lamp .line {
+        display: block;
+        margin: 0 auto;
+        padding-bottom: 145px;
+    }
+
+    .price{
+      display: none;
+    }
+
+
+    .ipad-img{
+      max-width: 530px;
+    }
+
+    .ipad-friday{
+      margin-left: 86px;
+    }
+
+    .map{
+      display: block;
+      margin:0 auto;
+      max-width: 550px;
+    }
+
+    #ipad-text{
+      display: block;
+      margin-top: 25px;
+      color:white;
+      font-family: "HelveticaNeueCyr";
+      font-size: 14pt;
+      font-weight: lighter;
+    }
+
+    .building{
+      display: none;
+    }
+
+    #cost {
+      background-image: url(../img/bg_md.png);
+      background-repeat: no-repeat;
+      background-size: cover;
+      position: relative;
+      min-height: 100%;
+      //height: 1380px;
+      border-bottom: 2px dashed #DDDDDD;
+   }
+    #contacts {
+        position: relative;
+        background-image: url(../img/bg_md.png);
+        background-repeat: no-repeat;
+        background-size: cover;
+        min-height: 90%;
+        height: 650px;
+    }
+
+    .week {
+        margin: 0 auto;
+        max-width: 660px;
+    }
+ 
+    .box-rooms{
+      width: 100%;
+      min-height: 450px;
+      margin-top: 35%;
+      background-image: url(../img/room_md.png);
+      background-size: cover;
+      background-position: center center;
+      position: relative; 
+    }
+
+} 
+
+  @media all and (device-width: 768px) and (device-height: 1024px) and (orientation:landscape) {
+      .logotype{
+        margin:0 auto;
+        max-width: 500px;
+      }
+
+      label{
+        display: none;
+      }
+
+      .myinput{
+        margin: 0 auto;
+        width: 100%;
+      }
+
+      .bt-buy{
+        margin-left: 0;
+        display: block;
+        margin: 0 auto;
+        float: none;
+      }
+      
+      .buy button{
+        float: none;
+        margin: 0 auto;
+        }
+
+      h3{
+        padding-left: 15px;
+        text-align: center;
+      }
+
+      .dns-p1{
+        text-align: center;
+      }
+
+      .dns-p2{
+        text-align: center;
+      }
+
+      .dns-p3{
+        text-align: center;
+      }
+
+      #sel-day{
+          border-right: none;
+      }
+      
+      #rooms h2 {
+        font-family: 'Pragmatica';
+        margin-top: 100px;
+        color: #6a6868;
+      }
+
+      .logotype{
+        float:none;
+        margin:0 auto;
+        max-width: 500px;
+      }
+
+      #group{
+        padding-top: 20%;
+      }
+
+      #time{
+        padding-top: 20%; 
+      }
+
+      #lamp{
+        padding-top: 80px;
+      }
+      
+      #cost .line{
+        display: none;
+      }
+
+      #lamp .line {
+        display: block;
+        margin: 0 auto;
+        padding-bottom: 10px;
+      }
+
+      .box-rooms{
+        width: 100%;
+        min-height: 450px;
+        margin-top: 50px;
+        background-image: url(../img/room_md.png);
+        background-size: cover;
+        background-position: center center;
+        position: relative; 
+      }
+
+      #cost {
+          background-image: url(../img/bg_md.png);
+          background-repeat: no-repeat;
+          background-size: cover;
+          position: relative;
+          min-height: 100%;
+         // height: 1400px;
+         overflow: visible;
+          border-bottom: 2px dashed #DDDDDD;
+      }
+
+    .ipad-img{
+      max-width: 530px;
+    }
+
+     .price{
+      display: none;
+      }
+
+      .week {
+          margin: 0 auto;
+          max-width: 1010px;
+          padding-bottom: 15px;
+      }
+
+      .day {
+          background-color: white;
+          float: left;
+          height: 545px;
+          margin-left: 5px;
+          margin-top: 20px;
+          width: 130px;
+      }
+
+      .map{
+        max-width: 500px;
+      }
+
+      #cost {
+        background-image: url(../img/bg_md.png);
+        background-repeat: no-repeat;
+        background-size: cover;
+        position: relative;
+        min-height: 100%;
+       // height: 800px;
+        border-bottom: 2px dashed #DDDDDD;
+     }
+
+     #contacts {
+        position: relative;
+        background-image: url(../img/bg_md.png);
+        background-repeat: no-repeat;
+        background-size: cover;
+        min-height: 85%;
+        height: 650px;
+    }
+
+}

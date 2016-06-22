@@ -1,0 +1,62 @@
+
+.day a .l-time:hover {
+    background: #3fbfd0; /* Цвет фона под ссылкой */ 
+    color: #ffe; /* Цвет ссылки */ 
+}
+.day a .h-time:hover {
+    background: #49c360; /* Цвет фона под ссылкой */ 
+    color: #ffe; /* Цвет ссылки */ 
+}
+
+.day a:hover {
+
+    text-decoration: none
+}
+
+#zakaz{
+    display: none;
+}
+
+#cost{
+    display: none;
+}
+#contacts{
+    display: none;
+}
+.underChange {
+    text-align: center;
+    color: #747373;
+    font-family: "HelveticaNeueCyr";
+    font-size: 14pt;
+}
+
+.modal-body {
+text-align: center;
+}
+#getCode img{
+    width: 50%;
+}
+.modal {
+    top: 130px;
+}
+
+.modal-content {
+    background-color: rgba(255, 255, 255, 0);
+}
+#prc strong{
+  font-family: "HelveticaBook";
+  font-size: 35px;
+}
+
+
+
+.prcGreen{
+    font-family: "HelveticaBook";
+    color: #56ae55;
+    font-size: 35px;
+}
+.prcBlue{
+    font-family: "HelveticaBook";
+    color: #29b2c7;
+    font-size: 35px;
+}
