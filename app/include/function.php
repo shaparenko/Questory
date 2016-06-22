@@ -1,44 +1,25 @@
 <?php
-                function GetDateWeek($komnataID) 
-                { 
-
-                    $k = strtotime("last Monday"); 
-                    $Year = date("Y",$k); 
-                    $Month = date("m",$k); 
-                    $Day = date("d",$k); 
-                    if ($Month < 2 && $Day < 8) { 
-                    $Year = $Year--; 
-                    $Month = $Month--; 
-                    } 
-                    if ($Month > 1 && $Day < 8) 
-                    $Month = $Month--; 
-
-                    $Day = $Day+7*$number; 
-                    echo date('d.m', mktime(0, 0, 0, $Month, $Day, $Year)); 
-                    echo ' - ';
-                    $Day = $Day+6; 
-                    echo date('d.m', mktime(0, 0, 0, $Month, $Day, $Year)); 
-                    
-                } 
                 
                 function weekselect($id){
                     
-                    $sql = "SELECT weekID FROM c_database WHERE komnataID = '$id' AND open = '1'";
+                    $sql = "SELECT weekID FROM c_database WHERE komnataID = '$id' AND open = '1' order by id";
                     $query = mysql_query($sql) or die(mysql_error());
                     
+                    $i=0;
+                    while ($row = mysql_fetch_assoc($query)) {
+                        
+                        $start = substr($row[weekID], 0, 2);
+                        $start2 = substr($row[weekID], 2, 2);
+                        $end = substr($row[weekID], 6, 2);
+                        $end2 = substr($row[weekID], 8, 2);
+
+                        $arr[$i] =  $start.'.'.$start2.'-'.$end.'.'.$end2;
+                        $i++;
+                    }
                     
-                    
+                    return $arr;
                     
                 }
-
-
-
-
-
-
-
-
-
 
                 function GetDateWeekID($number) 
                 { 
@@ -67,20 +48,13 @@
                                 foreach ($data as $key => $value) {
                                     
                                     if($key == 'info'){
-                                        
                                             foreach ($value as $key2 => $value2) {
-                                                if($key2 == 'data'){
-                                                    if((int) $value2>= (int) date('ymd')){$i = 1;}
-                                                }
-                                                if($key2 == 'dayName'){
-                                                    if($value2== 'Сб' || $value2== 'Вс'){$a = 1;}
-                                                }
+                                                if($key2 == 'data'){ if((int) $value2>= (int) date('ymd')){$i = 1;} }
+                                                if($key2 == 'dayName'){ if($value2== 'Сб' || $value2== 'Вс'){$a = 1;} }
                                             }
                                     }
 
                                     if($value == 0 && $i>0 ){
-                                        
-                                        
                                         if($a == 0){
                                             if($key == '10:30' || $key == '11:45' || $key == '13:00' || $key == '14:15' || $key == '15:30' || $key == '16:45')
                                             {echo '<a href="#zakaz"><span class="l-time smoothScroll">'.$key.'</span></a>';}
@@ -89,17 +63,10 @@
                                         else if($a == 1){
                                             echo '<a href="#zakaz"><span class="h-time smoothScroll">'.$key.'</span></a>';
                                         }
-                                        
-                                        
-                                        
-                                        
-                                        
-                                        
                                     }
                                     else if($key !== 'info'){
                                         echo '<a><span>'.$key.'</span></a>';
                                     }
-                                   
                                 }
                 }
                 
