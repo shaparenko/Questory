@@ -1,4 +1,6 @@
-<?php $a=1; ?>
+<?php $a=1; 
+$b=2;
+?>
 <nav class="container">
       <div class="navbar navbar-inverse navbar-fixed-top">
           <div class="container qFontmaim">
