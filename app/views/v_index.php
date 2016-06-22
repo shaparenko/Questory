@@ -1,7 +1,4 @@
-<?php $a=1; 
-$b=2;
-?>
-<nav class="container">
+b<nav class="container">
       <div class="navbar navbar-inverse navbar-fixed-top">
           <div class="container qFontmaim">
             <div class="navbar-header">
@@ -92,18 +89,18 @@ $b=2;
                   </div>
                 
                 
-                
+                <?php $house = weekselect(1);  ?>
                 
                 <div class="col-lg-6 col-md-6 col-sm-12">
                    <div class="row">
                      <a href="#cost"><div class="col-md-4 col-sm-4 col-xs-4 dayimg daygreen" id="firstWeekID">
-                            <span class="weekdays"><?php GetDateWeek(0);  ?><p id="thisWeek">эта неделя</p></span>
+                            <span class="weekdays"><?php echo $house[0];  ?><p id="thisWeek">эта неделя</p></span>
                      </div></a>
                        <a href="#cost"><div class="col-md-4 col-sm-4 col-xs-4 dayimg dayblue" id="secondWeekID">
-                            <span class="weekdays"><?php GetDateWeek(1);  ?></span>
+                            <span class="weekdays"><?php echo $house[1];  ?></span>
                        </div></a>
                        <a href="#cost"><div class="col-md-4 col-sm-4 col-xs-4 dayimg dayblue" id="thirdWeekID">
-                           <span class="weekdays"><?php GetDateWeek(2);  ?></span>
+                           <span class="weekdays"><?php echo $house[2];  ?></span>
                        </div></a>
                    </div>
                 </div>
