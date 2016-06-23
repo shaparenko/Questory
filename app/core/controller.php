@@ -13,7 +13,8 @@ class Controller {
             }
             else{
                 $view = new View();
-                $view->generate('index',$model->getFirstWeek(),$model->getSecondWeek(),$model->getLastWeek());
+                //$view->generate('index',$model->getFirstWeek(),$model->getSecondWeek(),$model->getLastWeek());
+                $view->generate('index',$model->selectWeek(1));
             }
     }
 

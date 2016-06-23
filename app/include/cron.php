@@ -246,21 +246,32 @@ function GetDateWeek($number)
                        "23:00" => 0                            
                     )
         );
-
-
+        
+        //Выбираем прошедшую неделю
+        $sqlSel = mysql_query("SELECT id FROM c_database WHERE open = '1' order by id limit 1") or die(mysql_error());
+        
+        
+        if(mysql_num_rows($sqlSel)>0)
+        {
+            $rowId= mysql_fetch_assoc($sqlSel);
+            //Делаем ее не активной
+            $delOldWeek = mysql_query("UPDATE c_database SET open = '0' WHERE id = '$rowId[id]'") or die(mysql_error());
+            if($delOldWeek == true){
+                echo 'обновили';
+            }
+            else {echo 'нет ((';}
+        }
+        
         
         
         $inBD =  base64_encode(serialize($inBD));
-        
 
-        
-        
         $check = "SELECT id FROM c_database WHERE weekID = '$weekID'";
         $checkSql = mysql_query($check) or die(mysql_error());
         
-        if(mysql_num_rows($checkSql) < 1){
+        if(mysql_num_rows($checkSql) == 0){
            
-            $query = "INSERT INTO c_database (weekID,bd) VALUES ('$weekID','$inBD')";
+            $query = "INSERT INTO c_database (weekID,bd,komnataID) VALUES ('$weekID','$inBD','1')";
             $sql = mysql_query($query) or die(mysql_error());
             if($sql == true){
                 echo 'Ok';

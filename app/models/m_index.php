@@ -6,7 +6,26 @@ class m_index extends Model {
         parent::connectToDb();
     }
     
+    function selectWeek($komnataID){
+        
+        $query = "SELECT bd FROM c_database WHERE open = '1' AND komnataID = '$komnataID' order by id";
+        $sql = mysql_query($query) or die(mysql_error());
+        
+        $i=0;
+        while ($row = mysql_fetch_assoc($sql)) {
+            $str[bd][$i] = unserialize( base64_decode( $row[bd] ) );
+            $i++;
+        }
+        
+        return $str[bd];
+    }
 
+
+
+
+
+
+    /*
     public function getFirstWeek(){
     
         
@@ -60,7 +79,7 @@ class m_index extends Model {
          }
          else { return "Помилка";}
     }
-    
+    */
     
     
     public function SaveData($id,$weekday,$times,$price,$fio,$phone,$comment,$promo,$weekID){

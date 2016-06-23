@@ -1,4 +1,4 @@
-b<nav class="container">
+<nav class="container">
       <div class="navbar navbar-inverse navbar-fixed-top">
           <div class="container qFontmaim">
             <div class="navbar-header">
@@ -76,9 +76,9 @@ b<nav class="container">
              //$day = (int) date('dm');
               //echo $dayStart.'<br>';
               //echo date('dm');
-
+                
                      //echo '<pre>';
-                     //print_r($data[bd]);
+                     //print_r($data[bd][0]);
                      //die();
                      ?>   
                 
@@ -118,244 +118,244 @@ b<nav class="container">
                       <!-- первая неделя -->
                       <div class="week" id="firstWeek">  
                        <div class="day" id="monday">
-                          <div  <?php topCssCheck($data[bd][0][info][data]); ?> >
+                          <div  <?php topCssCheck($data[0][0][info][data]); ?> >
                             <p class="nameday">ПОНЕДЕЛЬНИК</p>
-                            <p class="namedata"><?php echo $data[bd][0][info][day];  ?></p>
-                            <p class="sale"><?php echo $data[bd][0][info][skidka];  ?></p>
-                            <p class="holiday"><?php echo $data[bd][0][info][skidkaName];  ?></p>
-                            <span class="hidden dayID"><?php echo $data[bd][0][info][data];  ?></span>
-                            <span class="hidden weekID"><?php echo $data[bd][0][info][weekID];  ?></span>
+                            <p class="namedata"><?php echo $data[0][0][info][day];  ?></p>
+                            <p class="sale"><?php echo $data[0][0][info][skidka];  ?></p>
+                            <p class="holiday"><?php echo $data[0][0][info][skidkaName];  ?></p>
+                            <span class="hidden dayID"><?php echo $data[0][0][info][data];  ?></span>
+                            <span class="hidden weekID"><?php echo $data[0][0][info][weekID];  ?></span>
                             
                           </div>
-                             <?php timeMaker($data[bd][0]); ?>   
+                             <?php timeMaker($data[0][0]); ?>   
                        </div>  
                        <div class="day"  id="tuesday">
-                          <div  <?php topCssCheck($data[bd][1][info][data]); ?> >
+                          <div  <?php topCssCheck($data[0][1][info][data]); ?> >
                             <p class="nameday">ВТОРНИК</p>
-                            <p class="namedata"><?php echo $data[bd][1][info][day];  ?></p>
-                            <p class="sale"><?php echo $data[bd][1][info][skidka];  ?></p>
-                            <p class="holiday"><?php echo $data[bd][1][info][skidkaName];  ?></p>
-                            <span class="hidden dayID"><?php echo $data[bd][1][info][data];  ?></span>
-                            <span class="hidden weekID"><?php echo $data[bd][0][info][weekID];  ?></span>
+                            <p class="namedata"><?php echo $data[0][1][info][day];  ?></p>
+                            <p class="sale"><?php echo $data[0][1][info][skidka];  ?></p>
+                            <p class="holiday"><?php echo $data[0][1][info][skidkaName];  ?></p>
+                            <span class="hidden dayID"><?php echo $data[0][1][info][data];  ?></span>
+                            <span class="hidden weekID"><?php echo $data[0][0][info][weekID];  ?></span>
                           </div>
-                               <?php timeMaker($data[bd][1]); ?>   
+                               <?php timeMaker($data[0][1]); ?>   
                        </div> 
                        <div class="day" id="wednesday">
-                            <div  <?php topCssCheck($data[bd][2][info][data]); ?> >
+                            <div  <?php topCssCheck($data[0][2][info][data]); ?> >
                                 <p class="nameday">СРЕДА</p>
-                                <p class="namedata"><?php echo $data[bd][2][info][day];  ?></p>
-                            <p class="sale"><?php echo $data[bd][2][info][skidka];  ?></p>
-                            <p class="holiday"><?php echo $data[bd][2][info][skidkaName];  ?></p>
-                            <span class="hidden dayID"><?php echo $data[bd][2][info][data];  ?></span>
-                            <span class="hidden weekID"><?php echo $data[bd][0][info][weekID];  ?></span>
+                                <p class="namedata"><?php echo $data[0][2][info][day];  ?></p>
+                            <p class="sale"><?php echo $data[0][2][info][skidka];  ?></p>
+                            <p class="holiday"><?php echo $data[0][2][info][skidkaName];  ?></p>
+                            <span class="hidden dayID"><?php echo $data[0][2][info][data];  ?></span>
+                            <span class="hidden weekID"><?php echo $data[0][0][info][weekID];  ?></span>
                             </div>
-                              <?php timeMaker($data[bd][2]); ?>                    
+                              <?php timeMaker($data[0][2]); ?>                    
                        </div>
                        <div class="day" id="thursday">
-                          <div  <?php topCssCheck($data[bd][3][info][data]); ?> >
+                          <div  <?php topCssCheck($data[0][3][info][data]); ?> >
                             <p class="nameday">ЧЕТВЕРГ</p>
-                            <p class="namedata"><?php echo $data[bd][3][info][day];  ?></p>
-                            <p class="sale"><?php echo $data[bd][3][info][skidka];  ?></p>
-                            <p class="holiday"><?php echo $data[bd][3][info][skidkaName];  ?></p>
-                            <span class="hidden dayID"><?php echo $data[bd][3][info][data];  ?></span>
-                            <span class="hidden weekID"><?php echo $data[bd][0][info][weekID];  ?></span>
+                            <p class="namedata"><?php echo $data[0][3][info][day];  ?></p>
+                            <p class="sale"><?php echo $data[0][3][info][skidka];  ?></p>
+                            <p class="holiday"><?php echo $data[0][3][info][skidkaName];  ?></p>
+                            <span class="hidden dayID"><?php echo $data[0][3][info][data];  ?></span>
+                            <span class="hidden weekID"><?php echo $data[0][0][info][weekID];  ?></span>
                           </div>
-                              <?php timeMaker($data[bd][3]); ?>                         
+                              <?php timeMaker($data[0][3]); ?>                         
                        </div>  
                        <div class="ipad-friday day" id="friday">
-                          <div  <?php topCssCheck($data[bd][4][info][data]); ?> >
+                          <div  <?php topCssCheck($data[0][4][info][data]); ?> >
                             <p class="nameday">ПЯТНИЦА</p>
-                            <p class="namedata"><?php echo $data[bd][4][info][day];  ?></p>
-                            <p class="sale"><?php echo $data[bd][4][info][skidka];  ?></p>
-                            <p class="holiday"><?php echo $data[bd][4][info][skidkaName];  ?></p>
-                            <span class="hidden dayID"><?php echo $data[bd][4][info][data];  ?></span>
-                            <span class="hidden weekID"><?php echo $data[bd][0][info][weekID];  ?></span>
+                            <p class="namedata"><?php echo $data[0][4][info][day];  ?></p>
+                            <p class="sale"><?php echo $data[0][4][info][skidka];  ?></p>
+                            <p class="holiday"><?php echo $data[0][4][info][skidkaName];  ?></p>
+                            <span class="hidden dayID"><?php echo $data[0][4][info][data];  ?></span>
+                            <span class="hidden weekID"><?php echo $data[0][0][info][weekID];  ?></span>
                           </div>
-                              <?php timeMaker($data[bd][4]); ?>                        
+                              <?php timeMaker($data[0][4]); ?>                        
                        </div>  
                        <div class="day" id="saturday">
-                          <div  <?php topCssCheck($data[bd][5][info][data]); ?> >
+                          <div  <?php topCssCheck($data[0][5][info][data]); ?> >
                             <p class="nameday">СУБОТА</p>
-                            <p class="namedata"><?php echo $data[bd][5][info][day];  ?></p>
-                            <p class="sale"><?php echo $data[bd][5][info][skidka];  ?></p>
-                            <p class="holiday"><?php echo $data[bd][5][info][skidkaName];  ?></p>
-                            <span class="hidden dayID"><?php echo $data[bd][5][info][data];  ?></span>
-                            <span class="hidden weekID"><?php echo $data[bd][0][info][weekID];  ?></span>
+                            <p class="namedata"><?php echo $data[0][5][info][day];  ?></p>
+                            <p class="sale"><?php echo $data[0][5][info][skidka];  ?></p>
+                            <p class="holiday"><?php echo $data[0][5][info][skidkaName];  ?></p>
+                            <span class="hidden dayID"><?php echo $data[0][5][info][data];  ?></span>
+                            <span class="hidden weekID"><?php echo $data[0][0][info][weekID];  ?></span>
                           </div>
-                              <?php timeMaker($data[bd][5]); ?>                         
+                              <?php timeMaker($data[0][5]); ?>                         
                        </div> 
                        <div class="day" id="sunday">
-                          <div  <?php topCssCheck($data[bd][6][info][data]); ?> >
+                          <div  <?php topCssCheck($data[0][6][info][data]); ?> >
                             <p class="nameday">ВОСКРЕСЕНЬЕ</p>
-                            <p class="namedata"><?php echo $data[bd][6][info][day];  ?></p>
-                            <p class="sale"><?php echo $data[bd][6][info][skidka];  ?></p>
-                            <p class="holiday"><?php echo $data[bd][6][info][skidkaName];  ?></p>
-                            <span class="hidden dayID"><?php echo $data[bd][6][info][data];  ?></span>
-                            <span class="hidden weekID"><?php echo $data[bd][0][info][weekID];  ?></span>
+                            <p class="namedata"><?php echo $data[0][6][info][day];  ?></p>
+                            <p class="sale"><?php echo $data[0][6][info][skidka];  ?></p>
+                            <p class="holiday"><?php echo $data[0][6][info][skidkaName];  ?></p>
+                            <span class="hidden dayID"><?php echo $data[0][6][info][data];  ?></span>
+                            <span class="hidden weekID"><?php echo $data[0][0][info][weekID];  ?></span>
                           </div>
-                              <?php timeMaker($data[bd][6]); ?>                        
+                              <?php timeMaker($data[0][6]); ?>                        
                        </div>                                                               
                      </div>
                       
                       <!-- вторая неделя -->
                       <div class="week " id="secondWeek">  
                        <div class="day" id="monday">
-                          <div  <?php topCssCheck($secData[bd][0][info][data]); ?> >
+                          <div  <?php topCssCheck($data[1][0][info][data]); ?> >
                             <p class="nameday">ПОНЕДЕЛЬНИК</p>
-                            <p class="namedata"><?php echo $secData[bd][0][info][day];  ?></p>
-                            <p class="sale"><?php echo $secData[bd][0][info][skidka];  ?></p>
-                            <p class="holiday"><?php echo $secData[bd][0][info][skidkaName];  ?></p>
-                            <span class="hidden dayID"><?php echo $secData[bd][0][info][data];  ?></span>
-                            <span class="hidden weekID"><?php echo $secData[bd][0][info][weekID];  ?></span>
+                            <p class="namedata"><?php echo $data[1][0][info][day];  ?></p>
+                            <p class="sale"><?php echo $data[1][0][info][skidka];  ?></p>
+                            <p class="holiday"><?php echo $data[1][0][info][skidkaName];  ?></p>
+                            <span class="hidden dayID"><?php echo $data[1][0][info][data];  ?></span>
+                            <span class="hidden weekID"><?php echo $data[1][0][info][weekID];  ?></span>
                           </div>
-                             <?php timeMaker($secData[bd][0]); ?>   
+                             <?php timeMaker($data[1][0]); ?>   
                        </div>  
                        <div class="day"  id="tuesday">
-                          <div  <?php topCssCheck($secData[bd][1][info][data]); ?> >
+                          <div  <?php topCssCheck($data[1][1][info][data]); ?> >
                             <p class="nameday">ВТОРНИК</p>
-                            <p class="namedata"><?php echo $secData[bd][1][info][day];  ?></p>
-                            <p class="sale"><?php echo $secData[bd][1][info][skidka];  ?></p>
-                            <p class="holiday"><?php echo $secData[bd][1][info][skidkaName];  ?></p>
-                            <span class="hidden dayID"><?php echo $secData[bd][1][info][data];  ?></span>
-                            <span class="hidden weekID"><?php echo $secData[bd][0][info][weekID];  ?></span>
+                            <p class="namedata"><?php echo $data[1][1][info][day];  ?></p>
+                            <p class="sale"><?php echo $data[1][1][info][skidka];  ?></p>
+                            <p class="holiday"><?php echo $data[1][1][info][skidkaName];  ?></p>
+                            <span class="hidden dayID"><?php echo $data[1][1][info][data];  ?></span>
+                            <span class="hidden weekID"><?php echo $data[1][0][info][weekID];  ?></span>
                           </div>
-                               <?php timeMaker($secData[bd][1]); ?>   
+                               <?php timeMaker($data[1][1]); ?>   
                        </div> 
                        <div class="day" id="wednesday">
-                            <div  <?php topCssCheck($secData[bd][2][info][data]); ?> >
+                            <div  <?php topCssCheck($data[1][2][info][data]); ?> >
                                 <p class="nameday">СРЕДА</p>
-                                <p class="namedata"><?php echo $secData[bd][2][info][day];  ?></p>
-                            <p class="sale"><?php echo $secData[bd][2][info][skidka];  ?></p>
-                            <p class="holiday"><?php echo $secData[bd][2][info][skidkaName];  ?></p>
-                            <span class="hidden dayID"><?php echo $secData[bd][2][info][data];  ?></span>
-                            <span class="hidden weekID"><?php echo $secData[bd][0][info][weekID];  ?></span>
+                                <p class="namedata"><?php echo $data[1][2][info][day];  ?></p>
+                            <p class="sale"><?php echo $data[1][2][info][skidka];  ?></p>
+                            <p class="holiday"><?php echo $data[1][2][info][skidkaName];  ?></p>
+                            <span class="hidden dayID"><?php echo $data[1][2][info][data];  ?></span>
+                            <span class="hidden weekID"><?php echo $data[1][0][info][weekID];  ?></span>
                             </div>
-                              <?php timeMaker($secData[bd][2]); ?>                    
+                              <?php timeMaker($data[1][2]); ?>                    
                        </div>
                        <div class="day" id="thursday">
-                          <div  <?php topCssCheck($secData[bd][3][info][data]); ?> >
+                          <div  <?php topCssCheck($data[1][3][info][data]); ?> >
                             <p class="nameday">ЧЕТВЕРГ</p>
-                            <p class="namedata"><?php echo $secData[bd][3][info][day];  ?></p>
-                            <p class="sale"><?php echo $secData[bd][3][info][skidka];  ?></p>
-                            <p class="holiday"><?php echo $secData[bd][3][info][skidkaName];  ?></p>
-                            <span class="hidden dayID"><?php echo $secData[bd][3][info][data];  ?></span>
-                            <span class="hidden weekID"><?php echo $secData[bd][0][info][weekID];  ?></span>
+                            <p class="namedata"><?php echo $data[1][3][info][day];  ?></p>
+                            <p class="sale"><?php echo $data[1][3][info][skidka];  ?></p>
+                            <p class="holiday"><?php echo $data[1][3][info][skidkaName];  ?></p>
+                            <span class="hidden dayID"><?php echo $data[1][3][info][data];  ?></span>
+                            <span class="hidden weekID"><?php echo $data[1][0][info][weekID];  ?></span>
                           </div>
-                              <?php timeMaker($secData[bd][3]); ?>                         
+                              <?php timeMaker($data[1][3]); ?>                         
                        </div>  
                        <div class="ipad-friday day" id="friday">
-                          <div  <?php topCssCheck($secData[bd][4][info][data]); ?> >
+                          <div  <?php topCssCheck($data[1][4][info][data]); ?> >
                             <p class="nameday">ПЯТНИЦА</p>
-                            <p class="namedata"><?php echo $secData[bd][4][info][day];  ?></p>
-                            <p class="sale"><?php echo $secData[bd][4][info][skidka];  ?></p>
-                            <p class="holiday"><?php echo $secData[bd][4][info][skidkaName];  ?></p>
-                            <span class="hidden dayID"><?php echo $secData[bd][4][info][data];  ?></span>
-                            <span class="hidden weekID"><?php echo $secData[bd][0][info][weekID];  ?></span>
+                            <p class="namedata"><?php echo $data[1][4][info][day];  ?></p>
+                            <p class="sale"><?php echo $data[1][4][info][skidka];  ?></p>
+                            <p class="holiday"><?php echo $data[1][4][info][skidkaName];  ?></p>
+                            <span class="hidden dayID"><?php echo $data[1][4][info][data];  ?></span>
+                            <span class="hidden weekID"><?php echo $data[1][0][info][weekID];  ?></span>
                           </div>
-                              <?php timeMaker($secData[bd][4]); ?>                        
+                              <?php timeMaker($data[1][4]); ?>                        
                        </div>  
                        <div class="day" id="saturday">
-                          <div  <?php topCssCheck($secData[bd][5][info][data]); ?> >
+                          <div  <?php topCssCheck($data[1][5][info][data]); ?> >
                             <p class="nameday">СУБОТА</p>
-                            <p class="namedata"><?php echo $secData[bd][5][info][day];  ?></p>
-                            <p class="sale"><?php echo $secData[bd][5][info][skidka];  ?></p>
-                            <p class="holiday"><?php echo $secData[bd][5][info][skidkaName];  ?></p>
-                            <span class="hidden dayID"><?php echo $secData[bd][5][info][data];  ?></span>
-                            <span class="hidden weekID"><?php echo $secData[bd][0][info][weekID];  ?></span>
+                            <p class="namedata"><?php echo $data[1][5][info][day];  ?></p>
+                            <p class="sale"><?php echo $data[1][5][info][skidka];  ?></p>
+                            <p class="holiday"><?php echo $data[1][5][info][skidkaName];  ?></p>
+                            <span class="hidden dayID"><?php echo $data[1][5][info][data];  ?></span>
+                            <span class="hidden weekID"><?php echo $data[1][0][info][weekID];  ?></span>
                           </div>
-                              <?php timeMaker($secData[bd][5]); ?>                         
+                              <?php timeMaker($data[1][5]); ?>                         
                        </div> 
                        <div class="day" id="sunday">
-                          <div  <?php topCssCheck($secData[bd][6][info][data]); ?> >
+                          <div  <?php topCssCheck($data[1][6][info][data]); ?> >
                             <p class="nameday">ВОСКРЕСЕНЬЕ</p>
-                            <p class="namedata"><?php echo $secData[bd][6][info][day];  ?></p>
-                            <p class="sale"><?php echo $secData[bd][6][info][skidka];  ?></p>
-                            <p class="holiday"><?php echo $secData[bd][6][info][skidkaName];  ?></p>
-                            <span class="hidden dayID"><?php echo $secData[bd][6][info][data];  ?></span>
-                            <span class="hidden weekID"><?php echo $secData[bd][0][info][weekID];  ?></span>
+                            <p class="namedata"><?php echo $data[1][6][info][day];  ?></p>
+                            <p class="sale"><?php echo $data[1][6][info][skidka];  ?></p>
+                            <p class="holiday"><?php echo $data[1][6][info][skidkaName];  ?></p>
+                            <span class="hidden dayID"><?php echo $data[1][6][info][data];  ?></span>
+                            <span class="hidden weekID"><?php echo $data[1][0][info][weekID];  ?></span>
                           </div>
-                              <?php timeMaker($secData[bd][6]); ?>                        
+                              <?php timeMaker($data[1][6]); ?>                        
                        </div>                                                               
                      </div>
                       
                       <!-- третья неделя -->
                       <div class="week" id="thirdWeek">  
                        <div class="day" id="monday">
-                          <div  <?php topCssCheck($lastData[bd][0][info][data]); ?> >
+                          <div  <?php topCssCheck($data[2][0][info][data]); ?> >
                             <p class="nameday">ПОНЕДЕЛЬНИК</p>
-                            <p class="namedata"><?php echo $lastData[bd][0][info][day];  ?></p>
-                            <p class="sale"><?php echo $lastData[bd][0][info][skidka];  ?></p>
-                            <p class="holiday"><?php echo $lastData[bd][0][info][skidkaName];  ?></p>
-                            <span class="hidden dayID"><?php echo $lastData[bd][0][info][data];  ?></span>
-                            <span class="hidden weekID"><?php echo $lastData[bd][0][info][weekID];  ?></span>
+                            <p class="namedata"><?php echo $data[2][0][info][day];  ?></p>
+                            <p class="sale"><?php echo $data[2][0][info][skidka];  ?></p>
+                            <p class="holiday"><?php echo $data[2][0][info][skidkaName];  ?></p>
+                            <span class="hidden dayID"><?php echo $data[2][0][info][data];  ?></span>
+                            <span class="hidden weekID"><?php echo $data[2][0][info][weekID];  ?></span>
                           </div>
-                             <?php timeMaker($lastData[bd][0]); ?>   
+                             <?php timeMaker($data[2][0]); ?>   
                        </div>  
                        <div class="day"  id="tuesday">
-                          <div  <?php topCssCheck($lastData[bd][1][info][data]); ?> >
+                          <div  <?php topCssCheck($data[2][1][info][data]); ?> >
                             <p class="nameday">ВТОРНИК</p>
-                            <p class="namedata"><?php echo $lastData[bd][1][info][day];  ?></p>
-                            <p class="sale"><?php echo $lastData[bd][1][info][skidka];  ?></p>
-                            <p class="holiday"><?php echo $lastData[bd][1][info][skidkaName];  ?></p>
-                            <span class="hidden dayID"><?php echo $lastData[bd][1][info][data];  ?></span>
-                            <span class="hidden weekID"><?php echo $lastData[bd][0][info][weekID];  ?></span>
+                            <p class="namedata"><?php echo $data[2][1][info][day];  ?></p>
+                            <p class="sale"><?php echo $data[2][1][info][skidka];  ?></p>
+                            <p class="holiday"><?php echo $data[2][1][info][skidkaName];  ?></p>
+                            <span class="hidden dayID"><?php echo $data[2][1][info][data];  ?></span>
+                            <span class="hidden weekID"><?php echo $data[2][0][info][weekID];  ?></span>
                           </div>
-                               <?php timeMaker($lastData[bd][1]); ?>   
+                               <?php timeMaker($data[2][1]); ?>   
                        </div> 
                        <div class="day" id="wednesday">
-                            <div  <?php topCssCheck($lastData[bd][2][info][data]); ?> >
+                            <div  <?php topCssCheck($data[2][2][info][data]); ?> >
                                 <p class="nameday">СРЕДА</p>
-                                <p class="namedata"><?php echo $lastData[bd][2][info][day];  ?></p>
-                            <p class="sale"><?php echo $lastData[bd][2][info][skidka];  ?></p>
-                            <p class="holiday"><?php echo $lastData[bd][2][info][skidkaName];  ?></p>
-                            <span class="hidden dayID"><?php echo $lastData[bd][2][info][data];  ?></span>
-                            <span class="hidden weekID"><?php echo $lastData[bd][0][info][weekID];  ?></span>
+                                <p class="namedata"><?php echo $data[2][2][info][day];  ?></p>
+                            <p class="sale"><?php echo $data[2][2][info][skidka];  ?></p>
+                            <p class="holiday"><?php echo $data[2][2][info][skidkaName];  ?></p>
+                            <span class="hidden dayID"><?php echo $data[2][2][info][data];  ?></span>
+                            <span class="hidden weekID"><?php echo $data[2][0][info][weekID];  ?></span>
                             </div>
-                              <?php timeMaker($lastData[bd][2]); ?>                    
+                              <?php timeMaker($data[2][2]); ?>                    
                        </div>
                        <div class="day" id="thursday">
-                          <div  <?php topCssCheck($lastData[bd][3][info][data]); ?> >
+                          <div  <?php topCssCheck($data[2][3][info][data]); ?> >
                             <p class="nameday">ЧЕТВЕРГ</p>
-                            <p class="namedata"><?php echo $lastData[bd][3][info][day];  ?></p>
-                            <p class="sale"><?php echo $lastData[bd][3][info][skidka];  ?></p>
-                            <p class="holiday"><?php echo $lastData[bd][3][info][skidkaName];  ?></p>
-                            <span class="hidden dayID"><?php echo $lastData[bd][3][info][data];  ?></span>
-                            <span class="hidden weekID"><?php echo $lastData[bd][0][info][weekID];  ?></span>
+                            <p class="namedata"><?php echo $data[2][3][info][day];  ?></p>
+                            <p class="sale"><?php echo $data[2][3][info][skidka];  ?></p>
+                            <p class="holiday"><?php echo $data[2][3][info][skidkaName];  ?></p>
+                            <span class="hidden dayID"><?php echo $data[2][3][info][data];  ?></span>
+                            <span class="hidden weekID"><?php echo $data[2][0][info][weekID];  ?></span>
                           </div>
-                              <?php timeMaker($lastData[bd][3]); ?>                         
+                              <?php timeMaker($data[2][3]); ?>                         
                        </div>  
                        <div class="ipad-friday day" id="friday">
-                          <div  <?php topCssCheck($lastData[bd][4][info][data]); ?> >
+                          <div  <?php topCssCheck($data[2][4][info][data]); ?> >
                             <p class="nameday">ПЯТНИЦА</p>
-                            <p class="namedata"><?php echo $lastData[bd][4][info][day];  ?></p>
-                            <p class="sale"><?php echo $lastData[bd][4][info][skidka];  ?></p>
-                            <p class="holiday"><?php echo $lastData[bd][4][info][skidkaName];  ?></p>
-                            <span class="hidden dayID"><?php echo $lastData[bd][4][info][data];  ?></span>
-                            <span class="hidden weekID"><?php echo $lastData[bd][0][info][weekID];  ?></span>
+                            <p class="namedata"><?php echo $data[2][4][info][day];  ?></p>
+                            <p class="sale"><?php echo $data[2][4][info][skidka];  ?></p>
+                            <p class="holiday"><?php echo $data[2][4][info][skidkaName];  ?></p>
+                            <span class="hidden dayID"><?php echo $data[2][4][info][data];  ?></span>
+                            <span class="hidden weekID"><?php echo $data[2][0][info][weekID];  ?></span>
                           </div>
-                              <?php timeMaker($lastData[bd][4]); ?>                        
+                              <?php timeMaker($data[2][4]); ?>                        
                        </div>  
                        <div class="day" id="saturday">
-                          <div  <?php topCssCheck($lastData[bd][5][info][data]); ?> >
+                          <div  <?php topCssCheck($data[2][5][info][data]); ?> >
                             <p class="nameday">СУБОТА</p>
-                            <p class="namedata"><?php echo $lastData[bd][5][info][day];  ?></p>
-                            <p class="sale"><?php echo $lastData[bd][5][info][skidka];  ?></p>
-                            <p class="holiday"><?php echo $lastData[bd][5][info][skidkaName];  ?></p>
-                            <span class="hidden dayID"><?php echo $lastData[bd][5][info][data];  ?></span>
-                            <span class="hidden weekID"><?php echo $lastData[bd][0][info][weekID];  ?></span>
+                            <p class="namedata"><?php echo $data[2][5][info][day];  ?></p>
+                            <p class="sale"><?php echo $data[2][5][info][skidka];  ?></p>
+                            <p class="holiday"><?php echo $data[2][5][info][skidkaName];  ?></p>
+                            <span class="hidden dayID"><?php echo $data[2][5][info][data];  ?></span>
+                            <span class="hidden weekID"><?php echo $data[2][0][info][weekID];  ?></span>
                           </div>
-                              <?php timeMaker($lastData[bd][5]); ?>                         
+                              <?php timeMaker($data[2][5]); ?>                         
                        </div> 
                        <div class="day" id="sunday">
-                          <div  <?php topCssCheck($lastData[bd][6][info][data]); ?> >
+                          <div  <?php topCssCheck($data[2][6][info][data]); ?> >
                             <p class="nameday">ВОСКРЕСЕНЬЕ</p>
-                            <p class="namedata"><?php echo $lastData[bd][6][info][day];  ?></p>
-                            <p class="sale"><?php echo $lastData[bd][6][info][skidka];  ?></p>
-                            <p class="holiday"><?php echo $lastData[bd][6][info][skidkaName];  ?></p>
-                            <span class="hidden dayID"><?php echo $lastData[bd][6][info][data];  ?></span>
-                            <span class="hidden weekID"><?php echo $lastData[bd][0][info][weekID];  ?></span>
+                            <p class="namedata"><?php echo $data[2][6][info][day];  ?></p>
+                            <p class="sale"><?php echo $data[2][6][info][skidka];  ?></p>
+                            <p class="holiday"><?php echo $data[2][6][info][skidkaName];  ?></p>
+                            <span class="hidden dayID"><?php echo $data[2][6][info][data];  ?></span>
+                            <span class="hidden weekID"><?php echo $data[2][0][info][weekID];  ?></span>
                           </div>
-                              <?php timeMaker($lastData[bd][6]); ?>                        
+                              <?php timeMaker($data[2][6]); ?>                        
                        </div>                                                               
                      </div>
                   </div>
@@ -406,7 +406,7 @@ b<nav class="container">
                               <span class="hidden" id="dayID"></span>
                               <span class="hidden" id="weekID"></span>
                               
-                              
+                              <div class="soglash">Бронируя время, вы соглашаетесь с <a id="user_agreement">пользовательским соглашением</a></div> 
                             <button type="submit" class="btn btn-warning bt-buy" >ЗАБРОНИРОВАТЬ</button> 
                               </div>
                             </div>
@@ -459,7 +459,24 @@ b<nav class="container">
     </div>
    </div>
  </div>
-
+ 
+ 
+ <!-- Modal -->
+<div class="modal fade" id="getCodeMod" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
+  <div class="modal-dialog modal-lg">
+     <div class="modal-content-info">
+     <div class="modal-header">
+         <h4 class="modal-title">Пользовательское соглашение</h4>
+     </div>
+     <div class="modal-body">
+         <p>Мы собираем инфу</p>
+     </div>
+     <div class="modal-footer">
+         <button type="button" class="btn btn-white" id="modalClose">Закрыть</button>
+     </div>
+   </div>
+  </div>
+</div>     
 
     <!-- ==== FOOTER ==== -->
       <footer class="footer">

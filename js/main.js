@@ -54,6 +54,13 @@ $('.day a[href*=#zakaz] span').click(function(){
 
 });
 
+$('#user_agreement').click(function(){
+    //$("#getCodeM").html('<img src="img/success.png">');
+    jQuery("#getCodeMod").modal('show');
+});
+$('#modalClose').click(function(){
+    jQuery("#getCodeMod").modal('hide');
+});
 
 
 $('.bt-buy').click(function(){
@@ -68,9 +75,11 @@ $('.bt-buy').click(function(){
     var komnataID   = $('#komnataID').text(); ////
     var weekID      = $('#weekID').text(); 
 
-    
+    $('#fio').removeClass('vadidate');
+    $('#phone').removeClass('vadidate');
 
-    if(fio =='' || phone==''){   }
+    if(fio ==''){ $('#fio').addClass('vadidate'); }
+    else if(phone==''){ $('#phone').addClass('vadidate'); }
     else{
             $.ajax({
              url: 'index',

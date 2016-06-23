@@ -48,7 +48,9 @@ text-align: center;
   font-size: 35px;
 }
 
-
+.modal-content-info {
+        background-color: rgb(255, 255, 255);
+}
 
 .prcGreen{
     font-family: "HelveticaBook";
@@ -59,4 +61,16 @@ text-align: center;
     font-family: "HelveticaBook";
     color: #29b2c7;
     font-size: 35px;
+}
+
+.vadidate {
+    border: 2px solid #f00;
+}
+.soglash{
+    color: #fff;
+    font-family: "HelveticaNeueCyr";
+    font-size: 11pt;
+    float: left;
+    margin-left: 48px;
+    margin-bottom: 12px;
 }
