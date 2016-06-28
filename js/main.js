@@ -1,15 +1,30 @@
-
-/*$(document).ready(function() {
-   $('a[href^="#"]').click(function () { 
-     elementClick = $(this).attr("href");
-     destination = $(elementClick).offset().top;{
-       $('html').animate( { scrollTop: destination }, 1100 );
-     }
-     return false;
-   });
- });*/
-
 $(document).ready(function(){
+    
+function windowSize(){
+    if ($(window).width() <= '768'){
+        $('.day').click(function(){
+            $('.day').addClass('hide')
+            $(this).addClass('show')
+            //$(this).css('height', '100%');
+            //$(this).css('width', '94%');
+            //$(this).find( 'span' ).css('display', 'block');
+           // $(this).find( 'span' ).css('float', 'left');
+           $(this).addClass('day-mobil');
+           $(this).find( 'a span' ).addClass('span-mob');
+        })
+    } 
+    
+    else {
+        $('.day').removeClass('hide show');
+        $(this).removeClass('day-mobil');
+        $(this).find( 'a span' ).removeClass('span-mob');
+    }
+}
+//$(window).load(windowSize); // при загрузке
+//$(window).resize(windowSize); // при изменении размеров
+// или "два-в-одном", вместо двух последних строк:
+$(window).on('load resize',windowSize);
+    
     
 /*----------------------------------Form--------------------------------------*/     
 $('.day a[href*=#zakaz] span').click(function(){
@@ -128,17 +143,27 @@ $('#metro').click(function(){
             $('#secondWeek').css("display", "none");
             $('#thirdWeek').css("display", "none");
             
+            $('.day').removeClass('hide show');
+            $('.day').removeClass('day-mobil');
+            $('.day').find( 'a span' ).removeClass('span-mob');
+            
         }
 
         if(id == 'secondWeekID'){
             $('#firstWeek').css("display", "none");
             $('#secondWeek').css("display", "block");
             $('#thirdWeek').css("display", "none");
+            $('.day').removeClass('hide show');
+            $('.day').removeClass('day-mobil');
+            $('.day').find( 'a span' ).removeClass('span-mob');
         }
         if(id == 'thirdWeekID'){
             $('#firstWeek').css("display", "none");
             $('#secondWeek').css("display", "none");
             $('#thirdWeek').css("display", "block");
+            $('.day').removeClass('hide show');
+            $('.day').removeClass('day-mobil');
+            $('.day').find( 'a span' ).removeClass('span-mob');
         }
 
         
@@ -154,6 +179,8 @@ scrollTop: $(anchor.attr('href')).offset().top
 e.preventDefault();
 });
 return false;
+
+
 
 
 

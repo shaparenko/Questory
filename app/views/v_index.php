@@ -57,7 +57,7 @@
                  <div class="col-md-10 col-md-offset-1 col-sm-10 col-sm-offset-1 col-xs-12">
                     <div class="box-rooms">
                       <div class="buy">
-                          <span id="note"> Дневник начальника станции</span>
+                          <span id="note">Метро – 2033. Кабинет начальника станции.</span>
                           <a href="#cost"><button type="button" class="btn btn-success btn-buy" id="metro">забронировать</button></a>
                       </div>    
                     </div> 
@@ -71,7 +71,7 @@
           <div class="container-fluid">
             <div class="row">
               <div class="srv-box col-lg-12 col-md-12 col-sm-12 col-xs-12">
-                <h2 class="text-center">ДНЕВНИК НАЧАЛЬНИКА СТАНЦИИ</h2>
+                <h2 class="text-center">МЕТРО – 2033. Кабинет начальника станции.</h2>
              <?php
              //$day = (int) date('dm');
               //echo $dayStart.'<br>';
@@ -406,7 +406,7 @@
                               <span class="hidden" id="dayID"></span>
                               <span class="hidden" id="weekID"></span>
                               
-                              <div class="soglash">Бронируя время, вы соглашаетесь с <a id="user_agreement" href="#zakaz">пользовательским соглашением</a></div> 
+                              <div class="soglash">Оформляя заказ, вы соглашаетесь с <a id="user_agreement" href="#zakaz">пользовательским соглашением</a></div> 
                             <button type="submit" class="btn btn-warning bt-buy" >ЗАБРОНИРОВАТЬ</button> 
                               </div>
                             </div>

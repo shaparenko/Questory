@@ -66,3 +66,26 @@ text-align: justify;
     border: 2px solid #f00;
 }
 
+.show{
+    display: block;
+}
+.hide{
+    display: none;
+}
+
+.day-mobil {
+    background-color: white;
+
+    height: 100%;
+    margin-left: 10px;
+    margin-top: 20px;
+    width: 94%;
+
+}
+
+.span-mob {
+    display: block  !important ; 
+    float: left !important ; 
+;
+}
+
